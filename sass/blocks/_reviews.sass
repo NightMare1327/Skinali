@@ -1,0 +1,49 @@
+.reviews
+  background-color: $bg-secondary
+  &-slider
+    display: flex
+    justify-content: space-between
+    &_item
+      text-align: center
+      flex-direction: column
+    &_image
+      display: block
+      border-radius: 50%
+      height: 70px
+      width: 70px
+      border: 2px solid #6a99e9
+      margin: 20px auto
+    &_text
+      position: relative
+      font-size: 15px
+      font-style: italic
+      max-width: 370px
+      padding: 20px
+      background-color: #fff
+      border-radius: 10px
+      margin-bottom: 30px
+      &:after
+        content: ''
+        position: absolute
+        top: 104%
+        left: 50%
+        transform: translate(-50%, -7px)
+        border: 15px solid transparent 
+        border-top: 15px solid #fff
+@media (max-width: 1199px)
+  .reviews
+    &-slider
+      &_text
+        max-width: 300px
+        font-size: 13px
+@media (max-width: 991px)
+  .reviews
+    &-slider
+      &_text
+        max-width: 235px
+@media (max-width: 768px)
+  .reviews
+    &-slider
+      &_text
+        max-width: 190px
+        font-size: 10px
